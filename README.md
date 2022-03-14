@@ -9,7 +9,9 @@ SDIP: A Fast Time Series Shapelet Discovery Method Based on the Interpretation o
 
 Detailed usage is explained below, here we give sample usage
 for the main methods of the papers above. The example dataset is Coffee dataset from UCR archive, 
-which has 2 classes(0 and 1), 28 train data, 28 test data, the length of all time series is 286.  
+which has 2 classes(0 and 1), 28 train data, 28 test data, the length of all time series is 286.
+
+  
 ---------------------------------------------------------------
 1) $ python SDIP.py --stage train --train_data_path  ./data/Coffee_TRAIN.txt --test_data_path ./data/Coffee_TEST.txt --model_path ./Coffee_PLNN.pt --datasize 286 --label_format 0 
 2) $ python SDIP.py --stage discover_shapelet --train_data_path ./data/Coffee_TRAIN.txt --test_data_path ./data/Coffee_TEST.txt --model_path ./Coffee_PLNN.pt --datasize 286 --label_format 0 --result_path ./output/shapelets.txt
