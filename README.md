@@ -1,8 +1,8 @@
 ***************************************************************
-*****************      SDIP (2021)     *******************
-**** Author :           MHT, LIU YD      *******************
-**** please contact mahaitao@qhd.neu.edu.cn for any problems *******
-***************************************************************
+*****************&emsp;&emsp;&emsp;&emsp;&emsp;      SDIP (2022)  &emsp;&emsp;&emsp;&emsp;&emsp;   *******************  
+**** Author : &emsp;&emsp;&emsp;&emsp;&emsp;          MHT, LIU YD  &emsp; &emsp;&emsp;&emsp;&emsp;&emsp;   *******************  
+**** please contact mahaitao@qhd.neu.edu.cn for any problems *******  
+***************************************************************  
 
 The code is associated with the following paper:
 SDIP: A Fast Time Series Shapelet Discovery Method Based on the Interpretation of Piecewise Linear Neural Networks (PLNN)
@@ -26,38 +26,40 @@ The code is written in Python 3.8 and tested on a unbutu 16.04 LTS OS.
 == Usage ==
 
 1. train the PLNN model.
-$ python SDIP.py --stage <train|discover_shapelet> -train_data_path  <traindata> -test_data_path <testdata> -model_path <modelfile> -datasize <datasize> -label_format <[0|1]> [-H1 <H1>] [-H2 <H2>] [-H3 <H3>] [-epochs <epochs>]
+$ python SDIP.py --stage <train|discover_shapelet> -train_data_path  <traindata> -test_data_path <testdata> -model_path <modelfile> -datasize <datasize> -label_format <[0|1]> [-H1 \<H1\>] [-H2 \<H2\>] [-H3 \<H3\>] [-epochs <epochs>]
 
 
 2. discover shapelets
-$ python SDIP.py -stage <train|discover_shapelet> -train_data_path  <traindata> -test_data_path <testdata> -model_path <modelfile> -datasize <datasize> -label_format <[0|1]> [-H1 <H1>] [-H2 <H2>] [-H3 <H3>] [-epochs <epochs>] -result_path <resultfile>
+$ python SDIP.py -stage <train|discover_shapelet> -train_data_path  <traindata> -test_data_path <testdata> -model_path <modelfile> -datasize <datasize> -label_format <[0|1]> [-H1 \<H1\>] [-H2 \<H2\>] [-H3 \<H3\>] [-epochs <epochs>] -result_path <resultfile>
 
 Description: 
   
   -stage              
-                         train :              train a PLNN model             
-                         discover_shapelet :  generate the shapelets set
+  &emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;
+	train :             train a PLNN model               
+  &emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;
+	discover_shapelet :  generate the shapelets set  
 	 					 
-  -train_data_path       set the filename of training dataset
+  -train_data_path  &emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;     set the filename of training dataset  
   
-  -test_data_path        set the filename of test dataset
+  -test_data_path   &emsp; &emsp;&emsp;&emsp;&emsp; &emsp;&emsp;     set the filename of test dataset  
   
-  -model_path            set the modelfile name for saving model
+  -model_path    &emsp; &emsp;&emsp;&emsp;&emsp; &emsp;&emsp; &emsp;        set the modelfile name for saving model  
   
-  -datasize              set the lengh of an instance time series of training dataset
+  -datasize      &emsp; &emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;         set the lengh of an instance time series of training dataset  
   
-  -label_format          set the label format, 0 or 1
-                         0: the class label of time series dataset is start from 0
-                         1: the class label of time series dataset is start from 1
-						 
-  -H1                    set the number of neurons for the first hidden layer of PLNN model
+  -label_format    &emsp; &emsp;&emsp;&emsp;&emsp; &emsp;&emsp; &emsp;      set the label format, 0 or 1  
+   &emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;                      0: the class label of time series dataset is start from 0  
+  &emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;                       1: the class label of time series dataset is start from 1  
+  						 
+  -H1      &emsp; &emsp;&emsp;&emsp;&emsp; &emsp;&emsp; &emsp;&emsp;&emsp;&emsp; &emsp;              set the number of neurons for the first hidden layer of PLNN model  
   
-  -H2                    set the number of neurons  for the second hidden layer of PLNN model
+  -H2      &emsp; &emsp;&emsp;&emsp;&emsp; &emsp;&emsp; &emsp;&emsp;&emsp;&emsp; &emsp;              set the number of neurons  for the second hidden layer of PLNN model  
   
-  -H3                    set the number of neurons  for the thrid hidden layer of PLNN model
+  -H3      &emsp; &emsp;&emsp;&emsp;&emsp; &emsp;&emsp; &emsp;&emsp;&emsp;&emsp; &emsp;              set the number of neurons  for the thrid hidden layer of PLNN model  
   
-  -epochs                set the epochs for training a PLNN model
+  -epochs  &emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;             set the epochs for training a PLNN model  
   
-  -result_path           set the ouput file for saving shapelets set founded
+  -result_path    &emsp; &emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;       set the ouput file for saving shapelets set founded  
   
 
